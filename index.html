@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYC Devs - NYC's Fastest Growing Developer Slack Group</title>
+  <link rel="shortcut icon" href="../img/fav_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <!-- Bulma Version 0.7.5-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <style>
+    .section {
+      padding: .5rem;
+    }
+
+    .image {
+      width: 50%;
+      margin-left: 25%;
+      margin-bottom: 1rem;
+    }
+
+    .tabs ul {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="nav" class="section">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../">
+            <h3>NYC Devs</h3>
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="tabs is-right">
+              <ul>
+                <li class="is-active"><a href="/">Home</a></li>
+                <li><a href="https://nycdevs.seeker.company/">Jobs</a></li>
+                <li><a href="http://www.twitter.com/nycdevs">Twitter</a></li>
+                <li><a href="http://www.github.com/nycdevs">Github</a></li>
+                <li><a href="mailto:nycdevs@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="intro" class="section">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <figure class="image">
+          <img src="img/nycdevs.png" alt="NYC Devs logo" />
+        </figure>
+        <h1 class="title">
+          Welcome To NYC Devs
+        </h1>
+        <h2 class="subtitle is-4">
+          We are over 2000 developers learning, networking and talking code in NYC.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section id="form" class="section">
+    <div class="container">
+      <div class="column is-6 is-offset-3">
+        <div class="box">
+          <form action="/thank-you" name="submission" method="POST" data-netlify="true">
+            <div class="field">
+              <div class="control">
+                <input name="email" class="input is-large" type="email" required="true" placeholder="Your Email"
+                  autofocus="">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input name="found-us" class="input is-large" type="text" required="true"
+                  placeholder="How'd you find us?">
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox" required="true">
+                I agree to the follow the <a href="/code-of-conduct" target="_blank">Code of Conduct</a>
+              </label>
+            </div>
+            <button type="submit" class="button is-block is-info is-large is-fullwidth">Join On Slack</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="section">
+    <div class="tabs is-centered">
+      <ul>
+        <li>&copy NYC Devs</li>
+      </ul>
+    </div>
+  </section>
+  <script src="js/bulma.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145056948-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-145056948-1");
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '523997788463701');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=523997788463701&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+</body>
+
+</html>
